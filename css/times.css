@@ -20,12 +20,17 @@ p{
     
 }
 .subnav{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
     
 }
 .subnav a{
     
 }
 .mainnav{
+    display: flex;
+    flex-direction: column;
     
 }
 .mainnav a{
