@@ -1,10 +1,4 @@
-/* 
-Lauren Wong 
-Fonts,Colours and Layout Assignment 
-October 12, 2018 */
-
-/*Google Fonts*/
-@import url('https://fonts.googleapis.com/css?family=Merienda|Archivo+Black|Catamaran|Merriweather|Raleway|Quicksand|Open+Sans|Source+Serif+Pro|Montserrat|Poppins|Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Merienda|Archivo+Black|Catamaran|Merriweather|Raleway|Quicksand|Open+Sans|David+Libre|Source+Serif+Pro|Montserrat|Poppins');
 
 
 
@@ -17,14 +11,17 @@ October 12, 2018 */
 }
 
 html {
-    font-family: 'Raleway', sans-serif, 'Nanum Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif, 'David Libre', serif;
     /***   requirement font sans-serif ***/
     font-size: 1em;
     line-height: 1.6;
     /*font-family: font stack required for body text */
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Merriweather', serif, 'Source Serif Pro', serif;
     ;
     /*** requirement font serif ***/
@@ -63,7 +60,7 @@ header {
 }
 
 .subnav a {
-    font-family: 'Raleway', sans-serif, 'Nanum Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif, 'David Libre', serif;
     /***   requirement font sans-serif ***/
     color: hsl(35, 100%, 40%);
     padding: 0.5rem 12px;
@@ -86,7 +83,7 @@ header {
 
 .mainnav a {
     text-align: center;
-    font-family: 'Raleway', sans-serif, 'Nanum Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif, 'David Libre', serif;
     /***   requirement font sans-serif ***/
     font-size: 1.222em;
     font-weight: 100;
@@ -103,7 +100,7 @@ header {
 
 
 .masthead {
-    
+    /*    display: flex;*/
 
 }
 
@@ -136,7 +133,7 @@ header {
 }
 
 .story.lead-story {
-    background: linear-gradient(to bottom, hsl(100, 100%, 100%), hsl(200, 25%, 75%));
+    background: linear-gradient(to bottom, white, hsl(200, 25%, 75%));
 
 }
 
