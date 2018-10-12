@@ -1,89 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda|Archivo+Black|Catamaran|Merriweather|Raleway|Quicksand|Open+Sans|David+Libre|Source+Serif+Pro|Montserrat|Poppins');
+
+
+
 *,
 *::after,
-*::before{
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
-    font-size: 16px;
+
+html {
+    font-family: 'Raleway', sans-serif, 'David Libre', serif;
+    /***   requirement font sans-serif ***/
+    font-size: 1em;
     line-height: 1.6;
     /*font-family: font stack required for body text */
 }
-h1, h2, h3, h4{
-    /*font-family: font stack required for headings */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Merriweather', serif, 'Source Serif Pro', serif;
+    ;
+    /*** requirement font serif ***/
+    margin: 1.414em 0 0.5em;
+    line-height: 1.2;
+    color: hsl(35, 100%, 40%);
+    text-shadow: -1px -1px 0 hsl(35, 100%, 20%),
+        1px -1px 0 hsl(35, 100%, 20%),
+        -1px 1px 0 hsl(35, 100%, 20%),
+        1px 1px 0 hsl(35, 100%, 20%);
+
 }
-p{
+
+p {
     
 }
-.container{
-    
-}
-.subnav{
+
+.container {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    max-width: 1500px;
+    margin: 2rem;
+
+}
+
+header {
     
 }
-.subnav a{
-    
+
+.subnav {
+    background-color: hsl(200, 25%, 75%);
+    display: flex;
+    justify-content: flex-end;
+    /***   requirement SubNav menu aligns to the right ***/
+
 }
-.mainnav{
+
+.subnav a {
+    font-family: 'Raleway', sans-serif, 'David Libre', serif;
+    /***   requirement font sans-serif ***/
+    color: hsl(35, 100%, 40%);
+    padding: 0.5rem 12px;
+    text-decoration: none;
+
+}
+
+.subnav a:hover {
+    color: hsl(100, 100%, 100%);
+    font-weight: bold;
+}
+
+.mainnav {
+    background-color: hsl(200, 100%, 20%);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-bottom: 1rem solid hsl(100, 100%, 100%);
+}
+
+.mainnav a {
+    text-align: center;
+    font-family: 'Raleway', sans-serif, 'David Libre', serif;
+    /***   requirement font sans-serif ***/
+    font-size: 1.222em;
+    font-weight: 100;
+    color: hsl(100, 100%, 100%);
+    text-decoration: none;
+
+
+}
+
+.mainnav a:hover {
+    color: hsl(35, 100%, 40%);
+    font-weight: bolder;
+}
+
+
+.masthead {
+    /*    display: flex;*/
+
+}
+
+.times-logo {
+    width: 100%;
+    justify-content: center;
+
+}
+
+.masthead h1 {
+    justify-content: center;
+    font-size: 3.998em;
+    color: hsl(35, 100%, 40%);
+    text-align: center;
+
+
+}
+
+.content {
+    border-top: 1rem solid hsl(200, 25%, 75%);
+    border-bottom: 0.1rem solid hsl(210, 50%, 80%);
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
+
+}
+
+.content .story {
     
 }
-.mainnav a{
-    
+
+.story.lead-story {
+    background: linear-gradient(to bottom, white, hsl(200, 25%, 75%));
+
 }
-.masthead{
-    
+
+
+h1.story-title {
+    font-size: 1.999em;
+    padding: 1rem;
+
 }
-.times-logo{
-    
+
+.story img {
+    padding: 1rem;
+    float: left;
+
 }
-.masthead h1{
-    
+
+.story p {
+    font-size: 1em;
+    padding: 0 1rem;
+
+
 }
-.content{
-    
+
+.story blockquote {
+    quotes: "\201C""\201D";
+    padding: 0.5rem 0 0.5rem 1rem;
+    font-size: 1.222em;
+    font-family: 'Quicksand', sans-serif, 'Montserrat', sans-serif;
+    font-style: italic;
+
+
 }
-.content .story{
-    
-}
-.story.lead-story{
-    
-}
-h1.story-title{
-    
-}
-.story img{
-    
-}
-.story p{
-    
-}
-.story blockquote{
-    quotes: "\201E" "\201D";
-}
-.story blockquote::before{
+
+.story blockquote::before {
     content: open-quote;
+
 }
-.story blockquote::after{
+
+.story blockquote::after {
     content: close-quote;
+
 }
-.story p.byline{
+
+.story p.byline {
+    font-family: 'Open Sans', sans-serif, 'Poppins', sans-serif;
+    font-size: 1.414em;
+
+}
+
+p.byline span.author {
+    color: hsl(200, 50%, 40%);
+
+}
+
+p.byline span.pub {
+    padding: 0rem 0.5rem;
+    color: hsl(200, 50%, 40%);
+
+}
+
+.foot {
     
 }
-p.byline span.author{
-    
-}
-p.byline span.pub{
-    
-}
-.foot{
-    
-}
-.foot p{
-    
+
+.foot p {
+    font-size: 0.707em;
+    font-weight: bolder;
+
 }
