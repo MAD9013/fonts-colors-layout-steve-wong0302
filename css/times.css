@@ -180,6 +180,7 @@ h1.story-title {
 .story p.byline {
     font-family: 'Open Sans', sans-serif, 'Poppins', sans-serif;
     font-size: 1.414em;
+    font-weight: bold;
 
 }
 
